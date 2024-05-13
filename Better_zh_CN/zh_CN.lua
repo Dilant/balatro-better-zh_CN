@@ -112,8 +112,8 @@ return {
             j_mime = {
                 name = "哑剧演员",
                 text = {
-                    "重新触发所有",
-                    "{C:attention}留在手牌中的",
+                    "额外触发一次",
+                    "{C:attention}留在手中的",
                     "{C:attention}牌{}的能力"
                 }
             },
@@ -216,9 +216,10 @@ return {
             j_dusk = {
                 name = "黄昏",
                 text = {
-                    "每回合的",
-                    "{C:attention}最后一次出牌{}时",
-                    "所有打出的牌会被触发两次"
+                    "每回合",
+                    "{C:attention}最后一次出牌机会{}时",
+                    "额外触发一次",
+                    "所有打出的牌"
                 }
             },
             j_raised_fist = {
@@ -280,9 +281,9 @@ return {
             j_hack = {
                 name = "烂脱口秀演员",
                 text = {
-                    "重新触发",
+                    "额外触发一次",
                     "所有打出的",
-                    "{C:attention}2{}、{C:attention}3{}、{C:attention}4{}和{C:attention}5{}"
+                    "{C:attention}2{}, {C:attention}3{}, {C:attention}4{}, {C:attention}5{}"
                 }
             },
             j_pareidolia = {
@@ -528,8 +529,8 @@ return {
             j_sock_and_buskin = {
                 name = "喜与悲",
                 text = {
-                    "重新触发所有",
-                    "打出的{C:attention}人头牌{}"
+                    "额外触发一次",
+                    "所有打出的{C:attention}人头牌{}"
                 },
                 unlock = {
                     "打出总共",
@@ -606,9 +607,9 @@ return {
             j_hanging_chad = {
                 name = "未断选票",
                 text = {
+                    "额外触发{C:attention}#1#{}次",
                     "打出的牌中",
-                    "{C:attention}第一张{}计分牌",
-                    "额外触发{C:attention}#1#{}次"
+                    "{C:attention}第一张{}计分牌"
                 },
                 unlock = {
                     "用{E:1,C:attention}#1#",
@@ -620,7 +621,7 @@ return {
                 text = {
                     "打出的",
                     "{C:diamonds}方块{}花色牌",
-                    "在计分时给予{C:money}$#1#{}", 
+                    "在计分时给予{C:money}$#1#{}",
                 },
                 unlock = {
                     "在你的牌组中",
@@ -1402,8 +1403,8 @@ return {
                 name = "苏打水",
                 text = {
                     "在接下来的{C:attention}#1#{}次出牌中",
-                    "重新触发所有",
-                    "打出的卡牌"
+                    "额外触发一次",
+                    "所有打出的卡牌"
                 }
             },
             j_castle = {
@@ -2401,7 +2402,7 @@ return {
                 name = "负片标签",
                 text = {
                     "商店里的下一张",
-					"基础版本小丑牌",
+                    "基础版本小丑牌",
                     "将会免费且变为{C:dark_edition}负片"
                 }
             },
@@ -2409,7 +2410,7 @@ return {
                 name = "闪箔标签",
                 text = {
                     "商店里的下一张",
-					"基础版本小丑牌",
+                    "基础版本小丑牌",
                     "将会免费且变为{C:dark_edition}闪箔"
                 }
             },
@@ -2417,7 +2418,7 @@ return {
                 name = "镭射标签",
                 text = {
                     "商店里的下一张",
-					"基础版本小丑牌",
+                    "基础版本小丑牌",
                     "将会免费且变为{C:dark_edition}镭射"
                 }
             },
@@ -2425,7 +2426,7 @@ return {
                 name = "多彩标签",
                 text = {
                     "商店里的下一张",
-					"基础版本小丑牌",
+                    "基础版本小丑牌",
                     "将会免费且变为{C:dark_edition}多彩"
                 }
             },
@@ -3276,8 +3277,8 @@ return {
             red_seal = {
                 name = "红色蜡封",
                 text = {
-                    "重新触发",
-                    "此卡牌{C:attention}1{}次"
+                    "{C:attention}额外触发一次{}",
+                    "此卡牌"
                 }
             },
             blue_seal = {
@@ -3746,7 +3747,7 @@ return {
             k_melted_ex = "融化了！",
             b_copy = "复制",
             b_high_contrast_cards = "高对比度卡牌",
-			b_reduced_motion = "减少动态效果",
+            b_reduced_motion = "减少动态效果",
             b_set_rumble = "控制器震动",
             b_seals = "蜡封",
             b_new_challenge = "开始新挑战",
