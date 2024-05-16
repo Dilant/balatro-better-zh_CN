@@ -483,9 +483,8 @@ return {
                     "在计分时获得{C:money}$#1#"
                 },
                 unlock = {
-                    "打出一手五张",
-                    "只包含",
-                    "{C:enhanced,E:1}黄金牌{}的牌"
+                    "一手打出",
+                    "五张{C:enhanced,E:1}黄金牌"
                 }
             },
             j_mr_bones = {
@@ -497,8 +496,9 @@ return {
                     "{S:1.1,C:red,E:2}触发时自毁"
                 },
                 unlock = {
-                    "输掉{C:attention,E:1}#1#{}局游戏",
-                    "{C:inactive}(#2#)"
+                    "累计输掉",
+                    "{C:attention,E:1}#1#{}局游戏",
+                    "{C:inactive}（已输掉{C:attention}#2#{C:inactive}局）"
                 }
             },
             j_acrobat = {
@@ -508,8 +508,8 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "打出{C:attention,E:1}#1#{}次牌",
-                    "{C:inactive}(#2#)"
+                    "累计出{C:attention,E:1}#1#{}次牌",
+                    "{C:inactive}（已出牌{C:attention}#2#{C:inactive}次）"
                 }
             },
             j_sock_and_buskin = {
@@ -519,9 +519,9 @@ return {
                     "打出的每一张{C:attention}人头牌"
                 },
                 unlock = {
-                    "打出总共",
+                    "累计打出",
                     "{C:attention,E:1}#1#{}张人头牌",
-                    "{C:inactive}(#2#)"
+                    "{C:inactive}（已打出{C:attention}#2#{C:inactive}张）"
                 }
             },
             j_swashbuckler = {
@@ -532,9 +532,9 @@ return {
                     "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）"
                 },
                 unlock = {
-                    "总共卖出",
+                    "累计售出",
                     "{C:attention,E:1}#1#{}张小丑牌",
-                    "{C:inactive}(#2#)张"
+                    "{C:inactive}（已售出{C:attention}#2#{C:inactive}张）"
                 }
             },
             j_troubadour = {
@@ -558,7 +558,7 @@ return {
                 unlock = {
                     "拥有一张",
                     "带{C:attention,E:1}金色蜡封{}的",
-                    "{C:enhanced}黄金牌"
+                    "{C:enhanced,E:1}黄金牌"
                 }
             },
             j_smeared = {
@@ -568,9 +568,9 @@ return {
                     "{C:spades}黑桃{}和{C:clubs}梅花{}视作同一花色"
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "至少拥有{C:attention}#1#",
-                    "{E:1,C:attention}#2#"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:enhanced,E:1}#2#"
                 }
             },
             j_throwback = {
@@ -581,8 +581,8 @@ return {
                     "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）"
                 },
                 unlock = {
-                    "从主菜单中选择继续",
-                    "游玩已保存的局"
+                    "从主菜单",
+                    "选择{C:attention}继续游戏"
                 }
             },
             j_hanging_chad = {
@@ -593,8 +593,8 @@ return {
                     "{C:attention}第一张{}计分牌"
                 },
                 unlock = {
-                    "用{E:1,C:attention}#1#",
-                    "打赢Boss盲注"
+                    "打出{C:attention,E:1}#1#{}牌型",
+                    "击败{C:attention}Boss盲注"
                 }
             },
             j_rough_gem = {
@@ -605,9 +605,9 @@ return {
                     "在计分时给予{C:money}$#1#",
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "拥有至少{E:1,C:attention}#1#张",
-                    "带有{E:1,C:attention}#2#花色的卡牌"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:diamonds,E:1}#2#{}花色牌"
                 }
             },
             j_bloodstone = {
@@ -619,9 +619,9 @@ return {
                     "给予{X:mult,C:white}X#3#{}倍率"
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "拥有至少{E:1,C:attention}#1#张",
-                    "带有{E:1,C:attention}#2#花色的卡牌"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:hearts,E:1}#2#{}花色牌"
                 }
             },
             j_arrowhead = {
@@ -632,9 +632,9 @@ return {
                     "在计分时给予{C:chips}+#1#{}筹码",
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "拥有至少{E:1,C:attention}#1#张",
-                    "带有{E:1,C:attention}#2#花色的卡牌"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:spades,E:1}#2#{}花色牌"
                 }
             },
             j_onyx_agate = {
@@ -645,9 +645,9 @@ return {
                     "在计分时给予{C:mult}+#1#{}倍率"
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "拥有至少{E:1,C:attention}#1#张",
-                    "带有{E:1,C:attention}#2#花色的卡牌"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:clubs,E:1}#2#{}花色牌"
                 }
             },
             j_glass = {
@@ -658,9 +658,9 @@ return {
                     "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）"
                 },
                 unlock = {
-                    "在你的牌组中",
-                    "拥有{E:1,C:attention}#1#张",
-                    "{E:1,C:attention}#2#"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}#1#{}张",
+                    "{C:enhanced,E:1}#2#"
                 }
             },
             j_ring_master = {
@@ -671,8 +671,7 @@ return {
                     "可以重复出现"
                 },
                 unlock = {
-                    "达到底注",
-                    "等级{E:1,C:attention}#1#"
+                    "达到底注{C:attention,E:1}#1#"
                 }
             },
             j_flower_pot = {
@@ -684,8 +683,7 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "达到底注",
-                    "等级{E:1,C:attention}#1#"
+                    "达到底注{C:attention,E:1}#1#"
                 }
             },
             j_blueprint = {
@@ -695,7 +693,7 @@ return {
                     "一张{C:attention}小丑牌{}的能力",
                 },
                 unlock = {
-                    "赢一局"
+                    "赢得一局"
                 }
             },
             j_wee = {
@@ -707,8 +705,8 @@ return {
                     "{C:inactive}（当前为{C:chips}+#1#{C:inactive}筹码）"
                 },
                 unlock = {
-                    "在{E:1,C:attention}#1#{}回合",
-                    "或更少回合内赢得一局"
+                    "在{C:attention,E:1}#1#{}回合或更少回合内",
+                    "赢得一局"
                 }
             },
             j_merry_andy = {
@@ -718,8 +716,8 @@ return {
                     "手牌上限{C:attention}#2#"
                 },
                 unlock = {
-                    "在{E:1,C:attention}#1#{}回合",
-                    "或更少回合内赢得一局"
+                    "在{C:attention,E:1}#1#{}回合或更少回合内",
+                    "赢得一局"
                 }
             },
             j_oops = {
@@ -730,9 +728,8 @@ return {
                     "{C:inactive}（例如：{C:green}1/3{C:inactive}几率 → {C:green}2/3{C:inactive}几率）"
                 },
                 unlock = {
-                    "在一次出牌中",
-                    "获得至少",
-                    "{E:1,C:attention}#1#{}筹码"
+                    "单次出牌",
+                    "获得{C:attention,E:1}#1#{}分"
                 }
             },
             j_idol = {
@@ -744,9 +741,8 @@ return {
                     "{s:0.8}每回合结束时改变花色和点数"
                 },
                 unlock = {
-                    "在一次出牌中",
-                    "获得至少",
-                    "{E:1,C:attention}#1#{}筹码"
+                    "单次出牌",
+                    "获得{C:attention,E:1}#1#{}分"
                 }
             },
             j_seeing_double = {
@@ -758,9 +754,8 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "打出一手",
-                    "包含",
-                    "{E:1,C:attention}#1#的牌"
+                    "一手出牌",
+                    "包含四张{C:clubs,E:1}梅花{C:attention,E:1}7"
                 }
             },
             j_matador = {
@@ -771,9 +766,9 @@ return {
                     "获得{C:money}$#1#"
                 },
                 unlock = {
-                    "不使用弃牌且",
-                    "只用{E:1,C:attention}一次出牌",
-                    "打赢Boss盲注"
+                    "不使用弃牌",
+                    "只出一次牌",
+                    "击败{C:attention}Boss盲注"
                 }
             },
             j_hit_the_road = {
@@ -786,9 +781,8 @@ return {
                     "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）"
                 },
                 unlock = {
-                    "一次弃掉",
-                    "{E:1,C:attention}5张{}{E:1,C:attention}J",
-                    ""
+                    "一手弃掉",
+                    "五张{C:attention,E:1}J",
                 }
             },
             j_duo = {
@@ -799,9 +793,9 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "赢一局",
-                    "且不打出",
-                    "{E:1,C:attention}#1#"
+                    "赢得一局",
+                    "且赛局中",
+                    "没有打出过{C:attention,E:1}#1#{}牌型"
                 }
             },
             j_trio = {
@@ -812,9 +806,9 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "赢一局",
-                    "且不打出",
-                    "{E:1,C:attention}#1#"
+                    "赢得一局",
+                    "且赛局中",
+                    "没有打出过{C:attention,E:1}#1#{}牌型"
                 }
             },
             j_family = {
@@ -825,9 +819,9 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "赢一局",
-                    "且不打出",
-                    "{E:1,C:attention}#1#"
+                    "赢得一局",
+                    "且赛局中",
+                    "没有打出过{C:attention,E:1}#1#{}牌型"
                 }
             },
             j_order = {
@@ -838,9 +832,9 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "赢一局",
-                    "且不打出",
-                    "{E:1,C:attention}#1#"
+                    "赢得一局",
+                    "且赛局中",
+                    "没有打出过{C:attention,E:1}#1#{}牌型"
                 }
             },
             j_tribe = {
@@ -851,9 +845,9 @@ return {
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
-                    "赢一局",
-                    "且不打出",
-                    "{E:1,C:attention}#1#"
+                    "赢得一局",
+                    "且赛局中",
+                    "没有打出过{C:attention,E:1}#1#{}牌型"
                 }
             },
             j_cavendish = {
@@ -921,9 +915,8 @@ return {
                     "手牌上限{C:attention}-#2#"
                 },
                 unlock = {
-                    "在一次出牌中",
-                    "获得至少",
-                    "{E:1,C:attention}#1#{}筹码"
+                    "单次出牌",
+                    "获得{C:attention,E:1}#1#{}分"
                 }
             },
             j_invisible = {
@@ -935,9 +928,9 @@ return {
                     "{C:inactive}（{C:attention}#2#{C:inactive}/#1#）"
                 },
                 unlock = {
-                    "赢一局",
-                    "且从未拥有超过",
-                    "{E:1,C:attention}4张小丑牌"
+                    "赢得一局",
+                    "且赛局中",
+                    "从未拥有超过{C:attention,E:1}4{}张小丑牌"
                 }
             },
             j_brainstorm = {
@@ -948,7 +941,7 @@ return {
                 },
                 unlock = {
                     "弃掉一手",
-                    "{E:1,C:attention}皇家同花顺"
+                    "{C:attention,E:1}皇家同花顺"
                 }
             },
             j_satellite = {
@@ -960,8 +953,9 @@ return {
                     "{C:inactive}（将得到{C:money}$#2#{C:inactive}）"
                 },
                 unlock = {
-                    "有{E:1,C:money}$#1#",
-                    "或更多"
+                    "在一场赛局中",
+                    "拥有{C:money,E:1}$#1#",
+                    "或更多资金"
                 }
             },
             j_shoot_the_moon = {
@@ -973,21 +967,22 @@ return {
                 },
                 unlock = {
                     "在单个回合中",
-                    "打出牌组里的",
-                    "所有{E:1,C:attention}红桃"
+                    "打出{C:attention}完整牌组{}里的",
+                    "所有{C:hearts,E:1}红桃"
                 }
             },
             j_drivers_license = {
                 name = "驾驶执照",
                 text = {
                     "如果{C:attention}完整牌组{}中",
-                    "至少有{C:attention}16{}张增强卡牌",
+                    "至少有{C:attention}16{}张{C:enhanced}增强牌",
                     "{X:mult,C:white}X#1#{}倍率",
                     "{C:inactive}（当前有{C:attention}#2#{C:inactive}张）"
                 },
                 unlock = {
-                    "增强牌组里",
-                    "{E:1,C:attention}#1#{}张卡牌"
+                    "{C:attention}完整牌组{}中",
+                    "至少有{C:attention,E:1}16{}张",
+                    "{C:enhanced,E:1}增强牌",
                 }
             },
             j_cartomancer = {
@@ -998,8 +993,7 @@ return {
                     "{C:inactive}（必须有空位）"
                 },
                 unlock = {
-                    "发现每张",
-                    "{E:1,C:tarot}塔罗牌"
+                    "发现所有{C:tarot,E:1}塔罗牌"
                 }
             },
             j_astronomer = {
@@ -1010,8 +1004,7 @@ return {
                     "都{C:money}免费"
                 },
                 unlock = {
-                    "发现所有",
-                    "{E:1,C:planet}星球牌"
+                    "发现所有{C:planet,E:1}星球牌"
                 }
             },
             j_burnt = {
@@ -1022,9 +1015,9 @@ return {
                     "提升{C:attention}1{}级"
                 },
                 unlock = {
-                    "售出所有",
-                    "{E:1,C:attention}+#1#{}张卡牌",
-                    "{C:inactive}(#2#)"
+                    "累计售出",
+                    "{C:attention,E:1}#1#{}张卡牌",
+                    "{C:inactive}（已售出{C:attention}#2#{C:inactive}张）"
                 }
             },
             j_bootstraps = {
@@ -1035,8 +1028,8 @@ return {
                     "{C:inactive}（当前为{C:mult}+#3#{C:inactive}倍率）"
                 },
                 unlock = {
-                    "在你的牌组中拥有至少",
-                    "{E:1,C:attention}#1#{}张{C:dark_edition}多彩{}小丑"
+                    "拥有至少{C:attention,E:1}#1#{}张",
+                    "{C:dark_edition,E:1}多彩{}小丑牌"
                 }
             },
             j_caino = {
@@ -2206,7 +2199,8 @@ return {
             m_wild = {
                 name = "万能牌",
                 text = {
-                    "可以视作任何花色"
+                    "可以视作",
+                    "任何花色"
                 }
             },
             m_glass = {
@@ -2233,7 +2227,8 @@ return {
             m_gold = {
                 name = "黄金牌",
                 text = {
-                    "回合结束留在手牌中时",
+                    "回合结束",
+                    "留在手牌中时",
                     "获得{C:money}$#1#"
                 }
             },
@@ -2960,8 +2955,8 @@ return {
             deck_locked_win = {
                 name = "锁定",
                 text = {
-                    "在任一难度下",
-                    "以{C:attention}#1#",
+                    "使用{C:attention}#1#",
+                    "在任意难度",
                     "赢得一局"
                 }
             },
@@ -2976,8 +2971,8 @@ return {
             deck_locked_stake = {
                 name = "锁定",
                 text = {
-                    "在{V:1}#1#{}或以上",
-                    "难度以任一牌组",
+                    "使用任意牌组",
+                    "在{V:1}#1#{}或更高难度",
                     "赢得一局"
                 }
             },
@@ -3224,10 +3219,11 @@ return {
             challenge_locked = {
                 name = "未解锁",
                 text = {
-                    "用至少#1#个不同牌组",
+                    "使用至少#1#个不同牌组",
                     "各赢得一局比赛",
                     "以解锁挑战模式",
-                    "{C:attention,s:2}#2#/#1#"
+                    "",
+                    "{C:attention,s:1.5}#2#/#1#"
                 }
             }
         }
@@ -3399,9 +3395,9 @@ return {
             b_set_audio = "音频",
             b_set_gamespeed = "游戏速度",
             b_set_play_discard_pos = "出牌/弃牌按钮位置",
-            b_set_screenshake = "屏幕震动",
+            b_set_screenshake = "屏幕振动",
             b_set_crash_reports = "崩溃报告",
-            b_set_monitor = "显示监视器",
+            b_set_monitor = "显示器",
             b_set_windowmode = "窗口模式",
             b_set_apply = "应用",
             b_set_master_vol = "主音量",
@@ -3431,7 +3427,7 @@ return {
             b_tarot_cards = "塔罗牌",
             b_planet_cards = "星球牌",
             b_spectral_cards = "幻灵牌",
-            b_enhanced_cards = "增强卡牌",
+            b_enhanced_cards = "增强牌",
             b_editions = "版本",
             b_booster_packs = "补充包",
             b_tags = "标签",
@@ -3544,7 +3540,7 @@ return {
             ph_up_ante_2 = "加注所有盲注",
             ph_up_ante_3 = "刷新盲注",
             ph_select_challenge = "选择一项挑战",
-            ph_stat_joker = "使用这张牌完成的总回合数",
+            ph_stat_joker = "携带这张牌完成的总回合数",
             ph_stat_consumable = "这张牌的使用次数",
             ph_stat_voucher = "兑换此优惠券的次数",
             ph_demo_thanks_1 = "感谢游玩",
@@ -3588,9 +3584,9 @@ return {
                 "出牌/弃牌"
             },
             ml_windowmode_opt = {
-                "窗口模式",
-                "全屏模式",
-                "无边框模式"
+                "窗口",
+                "全屏",
+                "无边框"
             },
             ml_vsync_opt = {
                 "垂直同步开启",
@@ -3617,8 +3613,8 @@ return {
                 "种子"
             },
             ml_disabled_seed = {
-                "所有解锁和",
-                "发现均被禁用"
+                "所有收藏和成就",
+                "均不可解锁"
             },
             ['$'] = "$",
             k_redeemed_ex = "兑换！",
@@ -3645,8 +3641,8 @@ return {
             k_melted_ex = "融化了！",
             b_copy = "复制",
             b_high_contrast_cards = "高对比度卡牌",
-            b_reduced_motion = "减少动态效果",
-            b_set_rumble = "控制器震动",
+            b_reduced_motion = "减少动效",
+            b_set_rumble = "控制器振动",
             b_seals = "蜡封",
             b_new_challenge = "开始新挑战",
             b_unlock_all = "解锁全部",
