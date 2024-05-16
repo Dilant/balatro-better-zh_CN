@@ -754,7 +754,7 @@ return {
                 text = {
                     "如果打出的牌中",
                     "有{C:clubs}梅花{}花色牌",
-                    "和任一{C:attention}其它{}花色的牌计分",
+                    "和任一{C:attention}其他{}花色的牌计分",
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
@@ -885,7 +885,7 @@ return {
                 text = {
                     "在{C:attention}小盲注{}或{C:attention}大盲注{}回合开始时",
                     "这张小丑牌获得{X:mult,C:white}X#1#{}倍率",
-                    "然后随机{C:attention}摧毁{}一张小丑牌",
+                    "然后随机{C:attention}摧毁{}另一张小丑牌",
                     "{C:inactive}（当前为{X:mult,C:white}X#2#{}倍率）"
                 }
             },
