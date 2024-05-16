@@ -1437,8 +1437,8 @@ return {
             v_hone = {
                 name = "打磨",
                 text = {
-                    "{C:dark_edition}闪箔卡{}、{C:dark_edition}镭射卡",
-                    "和{C:dark_edition}多彩卡",
+                    "{C:dark_edition}闪箔牌{}、{C:dark_edition}镭射牌",
+                    "和{C:dark_edition}多彩牌",
                     "出现频率{C:attention}X#1#"
                 }
             },
@@ -1575,14 +1575,14 @@ return {
             v_glow_up = {
                 name = "焕彩",
                 text = {
-                    "和{C:dark_edition}闪箔卡{}、{C:dark_edition}镭射卡",
-                    "{C:dark_edition}多彩卡",
+                    "{C:dark_edition}闪箔牌{}、{C:dark_edition}镭射牌",
+                    "和{C:dark_edition}多彩牌",
                     "出现频率{C:attention}X#1#"
                 },
                 unlock = {
                     "同时拥有至少{C:attention}#1#张",
-                    "{C:dark_edition}闪箔卡{}、{C:dark_edition}镭射卡",
-                    "或{C:dark_edition}多彩卡{}版本的{C:attention}小丑牌"
+                    "{C:dark_edition}闪箔{}、{C:dark_edition}镭射",
+                    "或{C:dark_edition}多彩{}版本的{C:attention}小丑牌"
                 }
             },
             v_reroll_glut = {
@@ -3201,7 +3201,7 @@ return {
                 }
             },
             eternal = {
-                name = "永恒卡",
+                name = "永恒",
                 text = {
                     "不能售出",
                     "无法被摧毁"
@@ -3360,7 +3360,7 @@ return {
             blue_seal = "蓝色蜡封",
             red_seal = "红色蜡封",
             purple_seal = "紫色蜡封",
-            eternal = "永恒卡",
+            eternal = "永恒",
             perishable = "易腐",
             rental = "租用",
             pinned_left = "固定"
@@ -3519,7 +3519,7 @@ return {
             k_none = "无",
             k_game_modifiers = "游戏规则变化",
             k_custom_rules = "自定义规则",
-            k_banned_cards = "禁用卡",
+            k_banned_cards = "禁用卡牌",
             k_banned_tags = "禁用标签",
             k_other = "其他",
             k_money = "资金",
@@ -3544,8 +3544,8 @@ return {
             ph_up_ante_2 = "加注所有盲注",
             ph_up_ante_3 = "刷新盲注",
             ph_select_challenge = "选择一项挑战",
-            ph_stat_joker = "使用此卡完成的总回合数",
-            ph_stat_consumable = "这张卡的使用次数",
+            ph_stat_joker = "使用这张牌完成的总回合数",
+            ph_stat_consumable = "这张牌的使用次数",
             ph_stat_voucher = "兑换此优惠券的次数",
             ph_demo_thanks_1 = "感谢游玩",
             ph_demo_thanks_2 = "BALATRO 演示版",
@@ -3569,7 +3569,7 @@ return {
                 "playbalatro.com上的时事通讯"
             },
             ml_eternal = {
-                "永恒卡",
+                "永恒",
                 "不能售出",
                 "无法被摧毁"
             },
@@ -3803,7 +3803,7 @@ return {
                 "每次弃牌失去{C:money}$#1#"
             },
             ch_c_all_eternal = {
-                "所有小丑牌都是{C:eternal}永恒卡"
+                "所有小丑牌都是{C:eternal}永恒牌"
             },
             ch_c_flipped_cards = {
                 "{C:green}1/#1#{}几率抽到的牌背面朝上"
@@ -3818,7 +3818,7 @@ return {
                 "打出的每一张牌在计分后{C:attention}被削弱"
             },
             ch_c_set_eternal_ante = {
-                "击败{C:attention}底注#1#{}的{C:attention}Boss盲注{}时，所有小丑牌变为{C:attention}永恒卡"
+                "击败{C:attention}底注#1#{}的{C:attention}Boss盲注{}时，所有小丑牌变为{C:attention}永恒牌"
             },
             ch_c_set_joker_slots_ante = {
                 "击败{C:attention}底注#1#{}的{C:attention}Boss盲注{}时，小丑牌槽位数量变为{C:attention}0"
