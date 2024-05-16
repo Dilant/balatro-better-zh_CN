@@ -119,7 +119,7 @@ return {
                 name = "信用卡",
                 text = {
                     "可以在负债时支付",
-                    "最多负债{C:money}-$#1#"
+                    "最多透支{C:money}-$#1#"
                 }
             },
             j_greedy_joker = {
@@ -160,7 +160,7 @@ return {
                     "在回合开始时",
                     "摧毁右侧的小丑牌",
                     "如果成功，将其售价的{C:attention}两倍",
-                    "添加到这张牌的{C:mult}倍率",
+                    "添加到这张小丑牌的{C:mult}倍率",
                     "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）"
                 }
             },
@@ -527,9 +527,8 @@ return {
             j_swashbuckler = {
                 name = "侠盗",
                 text = {
-                    "将拥有的",
-                    "其他{C:attention}小丑牌{}的总售价",
-                    "添加到倍率",
+                    "计算拥有的其他{C:attention}小丑牌{}的总售价",
+                    "等量添加到倍率",
                     "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）"
                 },
                 unlock = {
@@ -668,7 +667,7 @@ return {
                 name = "马戏团长",
                 text = {
                     "{C:attention}小丑牌{}、{C:tarot}塔罗牌{}、",
-                    "{C:planet}星球牌{}和{C:planet}幻灵牌",
+                    "{C:planet}星球牌{}和{C:spectral}幻灵牌",
                     "可以重复出现"
                 },
                 unlock = {
@@ -911,7 +910,7 @@ return {
                 name = "乌合之众",
                 text = {
                     "在回合开始时",
-                    "生成{C:attention}#1#张{C:blue}普通{C:attention}小丑牌",
+                    "生成{C:attention}#1#{}张{C:blue}普通{C:attention}小丑牌",
                     "{C:inactive}（必须有空位）"
                 }
             },
@@ -1088,7 +1087,7 @@ return {
                 text = {
                     "在离开商店时",
                     "随机选择一张拥有的{C:attention}消耗牌",
-                    "创建{C:attention}1{}张其{C:dark_edition}负片{}复制"
+                    "生成一张其{C:dark_edition}负片{}复制"
                 },
                 unlock = {
                     "{E:1,s:1.3}?????"
@@ -1164,7 +1163,7 @@ return {
                 text = {
                     "如果出牌时",
                     "{C:money}资金{}少于等于{C:money}$#1#",
-                    "生成一张{C:purple}塔罗牌"
+                    "生成一张{C:tarot}塔罗牌"
                 }
             },
             j_baron = {
@@ -1228,7 +1227,7 @@ return {
                 name = "礼品卡",
                 text = {
                     "在回合结束时",
-                    "拥有的所有{C:attention}小丑牌{}和{C:attention}消耗牌",
+                    "拥有的{C:attention}小丑牌{}和{C:attention}消耗牌",
                     "{C:attention}售价{}增加{C:money}$#1#"
                 }
             },
@@ -1309,7 +1308,7 @@ return {
                 name = "零糖可乐",
                 text = {
                     "售出此牌时",
-                    "创建一个{C:attention}#1#"
+                    "生成一个{C:attention}#1#"
                 }
             },
             j_trading = {
@@ -1850,8 +1849,8 @@ return {
             c_temperance = {
                 name = "节制",
                 text = {
-                    "获得拥有的小丑牌",
-                    "售价总和的{C:money}资金",
+                    "计算拥有的{C:attention}小丑牌{}的总售价",
+                    "获得等量{C:money}资金",
                     "{C:inactive}（最多获得{C:money}$#1#{C:inactive}）",
                     "{C:inactive}（将得到{C:money}$#2#{C:inactive}）"
                 }
@@ -2709,8 +2708,8 @@ return {
                 name = "绿色牌组",
                 text = {
                     "每回合结束时",
-                    "每剩一次{C:blue}出牌次数，获得{C:money}$#1#{s:0.85}",
-                    "每剩一次{C:red}弃牌次数，获得{C:money}$#2#{s:0.85}",
+                    "每剩一次{C:blue}出牌次数，获得{C:money}$#1#",
+                    "每剩一次{C:red}弃牌次数，获得{C:money}$#2#",
                     "不赚取任何{C:money}利息"
                 }
             },
