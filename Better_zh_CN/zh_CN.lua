@@ -121,7 +121,7 @@ return {
                 name = "信用卡",
                 text = {
                     "可以在负债时支付",
-                    "最多透支{C:money}-$#1#"
+                    "最多透支{C:money}$#1#"
                 }
             },
             j_greedy_joker = {
@@ -160,7 +160,7 @@ return {
                 name = "仪式匕首",
                 text = {
                     "在回合开始时",
-                    "摧毁右侧一张小丑牌",
+                    "摧毁右侧相邻的一张小丑牌",
                     "如果成功，将其售价的{C:attention}两倍",
                     "添加到这张小丑牌的{C:mult}倍率",
                     "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）"
@@ -276,7 +276,7 @@ return {
                 text = {
                     "在回合结束时",
                     "如果本回合没有使用弃牌",
-                    "每有一次{C:attention}弃牌{}机会",
+                    "每有一次弃牌机会",
                     "获得{C:money}$#1#"
                 }
             },
@@ -453,7 +453,8 @@ return {
                 text = {
                     "打出的每一张牌",
                     "在计分时",
-                    "永久获得{C:chips}+#1#{}额外筹码"
+                    "被赋予{C:chips}+#1#{}额外筹码",
+                    "{s:0.8}额外筹码在本赛局中持续生效并可累积"
                 }
             },
             j_faceless = {
@@ -696,9 +697,9 @@ return {
                 name = "花盆",
                 text = {
                     "如果打出的牌中",
-                    "{C:attention}组成牌型{}的部分",
-                    "四种花色齐全",
-                    "{X:mult,C:white}X#1#{}倍率"
+                    "有{C:attention}四种花色{}各一张牌计分",
+                    "{X:mult,C:white}X#1#{}倍率",
+                    "{s:0.8}特例：被削弱的牌按原始花色计算"
                 },
                 unlock = {
                     "达到底注{C:attention,E:1}#1#"
@@ -707,7 +708,7 @@ return {
             j_blueprint = {
                 name = "蓝图",
                 text = {
-                    "复制右侧",
+                    "复制右侧相邻的",
                     "一张{C:attention}小丑牌{}的能力"
                 },
                 unlock = {
@@ -769,8 +770,8 @@ return {
                 name = "重影",
                 text = {
                     "如果打出的牌中",
-                    "有{C:clubs}梅花{}花色牌",
-                    "和任一{C:attention}其他{}花色的牌计分",
+                    "有一张{C:clubs}梅花{}花色牌",
+                    "和一张{C:attention}其他{}花色的牌计分",
                     "{X:mult,C:white}X#1#{}倍率"
                 },
                 unlock = {
@@ -1098,7 +1099,7 @@ return {
             j_perkeo = {
                 name = "帕奇欧",
                 text = {
-                    "在离开商店时",
+                    "在离开{C:attention}商店{}时",
                     "随机选择一张拥有的{C:attention}消耗牌",
                     "生成一张其{C:dark_edition}负片{}复制"
                 },
@@ -1256,7 +1257,8 @@ return {
                 name = "侵蚀",
                 text = {
                     "如果{C:attention}完整牌组",
-                    "少于{C:attention}#3#{}张牌",
+                    "卡牌张数少于{C:attention}初始张数",
+                    "{C:inactive}（初始为{C:attention}#3#{C:inactive}张）",
                     "每少一张牌{C:mult}+#1#{}倍率",
                     "{C:inactive}（当前为{C:mult}+#2#{C:inactive}倍率）"
                 }
