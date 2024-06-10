@@ -410,8 +410,8 @@ return {
                 text = {
                     "每回合{C:attention}第一次出牌{}时",
                     "如果只有{C:attention}1{}张牌",
-                    "向手牌添加",
-                    "{C:attention}1{}张其复制"
+                    "向牌组添加{C:attention}1{}张其复制",
+                    "并将复制品直接置于手牌中"
                 }
             },
             j_splash = {
@@ -568,8 +568,9 @@ return {
                 name = "证书",
                 text = {
                     "在回合开始时",
-                    "向手牌向添加",
-                    "{C:attention}1{}张带{C:attention}蜡封{}的牌"
+                    "向牌组添加",
+                    "{C:attention}1{}张带{C:attention}蜡封{}的牌",
+                    "并将这张牌直接置于手牌中"
                 },
                 unlock = {
                     "拥有一张",
@@ -1167,8 +1168,7 @@ return {
             j_hologram = {
                 name = "全息影像",
                 text = {
-                    "每向牌组或手牌",
-                    "添加一张卡牌",
+                    "每向牌组添加一张卡牌",
                     "这张小丑牌获得{X:mult,C:white}X#1#{}倍率",
                     "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）"
                 }
@@ -1234,7 +1234,8 @@ return {
             j_photograph = {
                 name = "照片",
                 text = {
-                    "打出的{C:attention}第一张人头牌",
+                    "打出的{C:attention}第一张{}",
+                    "计分的{C:attention}人头牌",
                     "在计分时给予{X:mult,C:white}X#1#{}倍率"
                 }
             },
@@ -2058,7 +2059,7 @@ return {
                 name = "护身符",
                 text = {
                     "选定{C:attention}1{}张卡牌",
-                    "为其添加{C:attention}金色蜡封"
+                    "为其戳上{C:attention}金色蜡封"
                 }
             },
             c_aura = {
@@ -2136,7 +2137,7 @@ return {
                 name = "既视感",
                 text = {
                     "选定{C:attention}1{}张卡牌",
-                    "为其添加{C:red}红色蜡封"
+                    "为其戳上{C:red}红色蜡封"
                 }
             },
             c_hex = {
@@ -2152,14 +2153,14 @@ return {
                 name = "入迷",
                 text = {
                     "选定{C:attention}1{}张卡牌",
-                    "为其添加{C:blue}蓝色蜡封"
+                    "为其戳上{C:blue}蓝色蜡封"
                 }
             },
             c_medium = {
                 name = "灵媒",
                 text = {
                     "选定{C:attention}1{}张卡牌",
-                    "为其添加{C:purple}紫色蜡封"
+                    "为其戳上{C:purple}紫色蜡封"
                 }
             },
             c_cryptid = {
@@ -2941,7 +2942,7 @@ return {
             remove_negative = {
                 name = "n",
                 text = {
-                    "{C:inactive,s:0.8}（移除复制牌的{C:dark_edition,s:0.8}负片{C:inactive,s:0.8}效果）"
+                    "{C:inactive,s:0.8}（移除复制品的{C:dark_edition,s:0.8}负片{C:inactive,s:0.8}效果）"
                 }
             },
             locked = {
@@ -2971,17 +2972,14 @@ return {
             demo_shop_locked = {
                 name = "锁定",
                 text = {
-                    "{C:attention}金宝的",
-                    "个人卡牌收藏。",
-                    "可在完整版",
-                    "{E:1,C:red}Balatro中找到"
+                    "{C:attention}金宝{}的个人卡牌收藏",
+                    "可在完整版{E:1,C:red}Balatro{}中找到",
                 }
             },
             wip_locked = {
                 name = "锁定",
                 text = {
-                    "正在",
-                    "制作中"
+                    "正在制作中"
                 }
             },
             deck_locked_win = {
@@ -3081,7 +3079,7 @@ return {
             p_arcana_normal = {
                 name = "秘术包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+                    "从{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3089,7 +3087,7 @@ return {
             p_arcana_jumbo = {
                 name = "巨型秘术包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+                    "从{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3097,7 +3095,7 @@ return {
             p_arcana_mega = {
                 name = "超级秘术包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+                    "从{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3105,7 +3103,7 @@ return {
             p_celestial_normal = {
                 name = "天体包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:planet}星球牌{}中",
+                    "从{C:attention}#2#{}张{C:planet}星球牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3113,7 +3111,7 @@ return {
             p_celestial_jumbo = {
                 name = "巨型天体包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:planet}星球牌{}中",
+                    "从{C:attention}#2#{}张{C:planet}星球牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3121,7 +3119,7 @@ return {
             p_celestial_mega = {
                 name = "超级天体包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:planet}星球牌{}中",
+                    "从{C:attention}#2#{}张{C:planet}星球牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3129,7 +3127,7 @@ return {
             p_spectral_normal = {
                 name = "幻灵包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+                    "从{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3137,7 +3135,7 @@ return {
             p_spectral_jumbo = {
                 name = "巨型幻灵包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+                    "从{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3145,7 +3143,7 @@ return {
             p_spectral_mega = {
                 name = "超级幻灵包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+                    "从{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
                     "选择{C:attention}#1#{}张",
                     "即选即用"
                 }
@@ -3153,7 +3151,7 @@ return {
             p_standard_normal = {
                 name = "标准包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:attention}游戏牌{}中",
+                    "从{C:attention}#2#{}张{C:attention}游戏牌{}中",
                     "选择{C:attention}#1#{}张",
                     "添加到你的牌组"
                 }
@@ -3161,7 +3159,7 @@ return {
             p_standard_jumbo = {
                 name = "巨型标准包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:attention}游戏牌{}中",
+                    "从{C:attention}#2#{}张{C:attention}游戏牌{}中",
                     "选择{C:attention}#1#{}张",
                     "添加到你的牌组"
                 }
@@ -3169,7 +3167,7 @@ return {
             p_standard_mega = {
                 name = "超级标准包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:attention}游戏牌{}中",
+                    "从{C:attention}#2#{}张{C:attention}游戏牌{}中",
                     "选择{C:attention}#1#{}张",
                     "添加到你的牌组"
                 }
@@ -3177,21 +3175,21 @@ return {
             p_buffoon_normal = {
                 name = "小丑包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+                    "从{C:attention}#2#{}张{C:joker}小丑牌{}中",
                     "选择{C:attention}#1#{}张"
                 }
             },
             p_buffoon_jumbo = {
                 name = "巨型小丑包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+                    "从{C:attention}#2#{}张{C:joker}小丑牌{}中",
                     "选择{C:attention}#1#{}张"
                 }
             },
             p_buffoon_mega = {
                 name = "超级小丑包",
                 text = {
-                    "从最多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+                    "从{C:attention}#2#{}张{C:joker}小丑牌{}中",
                     "选择{C:attention}#1#{}张"
                 }
             },
@@ -3606,9 +3604,9 @@ return {
                 "返回手牌"
             },
             ml_crash_report_info = {
-                "崩溃报告将发送给开发人员",
-                "用以减少今后出现问题。",
-                "不会发送身份信息或个人信息。"
+                "崩溃报告将发送给开发人员，",
+                "这将有助于减少今后可能出现的问题。",
+                "不会发送个人身份信息。"
             },
             ml_play_discard_pos_opt = {
                 "弃牌/出牌",
