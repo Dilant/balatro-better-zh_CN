@@ -59,7 +59,7 @@ return {
                 name = "占卜师",
                 text = {
                     "本赛局中",
-                    "每使用过一张{C:purple}塔罗牌",
+                    "每使用过一张{C:tarot}塔罗牌",
                     "这张小丑牌获得{C:mult}+#1#{}倍率",
                     "{C:inactive}（当前为{C:mult}+#2#{C:inactive}倍率）"
                 }
@@ -322,7 +322,7 @@ return {
                 }
             },
             j_scholar = {
-                name = "学者",
+                name = "尖子生",
                 text = {
                     "打出的每一张{C:attention}A",
                     "在计分时给予",
@@ -454,7 +454,7 @@ return {
                     "打出的每一张牌",
                     "在计分时",
                     "被赋予{C:chips}+#1#{}额外筹码",
-                    "{s:0.8}额外筹码在本赛局中持续生效并可累积"
+                    "{s:0.8}这些筹码在本赛局中持续生效并可累积"
                 }
             },
             j_faceless = {
@@ -946,7 +946,7 @@ return {
                     "经过{C:attention}#1#{}个回合后",
                     "售出此牌时",
                     "随机{C:attention}复制{}一张小丑牌",
-                    "{C:inactive}（{C:attention}#2#{C:inactive}/#1#）"
+                    "{C:inactive}（已经过{C:attention}#2#{C:inactive}个回合）"
                 },
                 unlock = {
                     "赢得一局",
@@ -990,7 +990,7 @@ return {
                 unlock = {
                     "在单个回合中",
                     "打出{C:attention}完整牌组{}里的",
-                    "所有{C:hearts,E:1}红桃"
+                    "所有{C:hearts,E:1}红桃{}花色牌"
                 }
             },
             j_drivers_license = {
@@ -2861,67 +2861,67 @@ return {
                 }
             },
             white_sticker = {
-                name = "白标贴",
+                name = "白色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}白注",
-                    "难度下获胜"
+                    "在{C:attention}白注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             red_sticker = {
-                name = "红标贴",
+                name = "红色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}红注",
-                    "难度下获胜"
+                    "在{C:attention}红注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             green_sticker = {
-                name = "绿标贴",
+                name = "绿色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}绿注",
-                    "难度下获胜"
+                    "在{C:attention}绿注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             blue_sticker = {
-                name = "蓝标贴",
+                name = "蓝色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}蓝注",
-                    "难度下获胜"
+                    "在{C:attention}蓝注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             black_sticker = {
-                name = "黑标贴",
+                name = "黑色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}黑注",
-                    "难度下获胜"
+                    "在{C:attention}黑注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             purple_sticker = {
-                name = "紫标贴",
+                name = "紫色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}紫注",
-                    "难度下获胜"
+                    "在{C:attention}紫注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             orange_sticker = {
-                name = "橙标贴",
+                name = "橙色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}橙注",
-                    "难度下获胜"
+                    "在{C:attention}橙注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             gold_sticker = {
-                name = "金标贴",
+                name = "金色标贴",
                 text = {
-                    "使用这张小丑牌",
-                    "在{C:attention}金注",
-                    "难度下获胜"
+                    "在{C:attention}金注{}难度",
+                    "携带这张小丑牌",
+                    "击败最终Boss盲注获胜"
                 }
             },
             playing_card = {
@@ -3555,7 +3555,7 @@ return {
             k_skipped_cap = "跳过",
             k_no_reward = "无奖励",
             k_reward = "奖励",
-            k_nope_ex = "没有！",
+            k_nope_ex = "啊哦！",
             k_not_allowed_ex = "不允许！",
             k_or = "或",
             k_balanced = "平衡",
@@ -3600,7 +3600,7 @@ return {
             },
             ml_gold_seal_desc = {
                 "黄金蜡封",
-                "若打出",
+                "打出并完成计分后",
                 "返回手牌"
             },
             ml_crash_report_info = {
@@ -3679,7 +3679,7 @@ return {
             k_deck = "牌组",
             k_progress = "进度",
             k_challenges = "挑战",
-            k_joker_stickers = "小丑贴纸",
+            k_joker_stickers = "小丑标贴",
             k_deck_stake_wins = "牌组赌注",
             k_enter_name = "输入名字",
             k_gold = "金色",
@@ -3690,8 +3690,8 @@ return {
             k_demo_version_ex = "试玩版！",
             k_playing_as = "使用",
             k_choose = "选择",
-            k_achievements_disabled = "未开启成就",
-            ph_no_boss_active = "无活跃boss",
+            k_achievements_disabled = "已禁用成就",
+            ph_no_boss_active = "无活跃Boss",
             ph_you_win = "你赢了！",
             ph_you_win_demo = "你赢下了试玩版！",
             ph_defeat_the_boss = "打赢Boss盲注",
@@ -3915,12 +3915,12 @@ return {
             },
             fh_5 = {
                 "现在选择",
-                "最多{C:attention}5{}张牌，",
+                "{C:attention}最多5张{}牌，",
                 "然后按下{C:blue}出牌{}按钮。"
             },
             fh_6 = {
                 "你也可以选择{C:red}弃牌{}，",
-                "最多能一次弃掉{C:attention}5{}张牌，",
+                "一次弃掉{C:attention}最多5张{}牌，",
                 "来帮助你凑出更强的牌型。",
                 "试试看！"
             },
@@ -4080,7 +4080,7 @@ return {
                 "你太棒了！"
             },
             wq_2 = {
-                "你表现得",
+                "你的表现",
                 "相当不错！"
             },
             wq_3 = {
@@ -4097,7 +4097,7 @@ return {
                 "教得不错啊！"
             },
             wq_6 = {
-                "你有几次出牌",
+                "你有几手出牌",
                 "非常精彩！"
             },
             wq_7 = {
@@ -4111,12 +4111,12 @@ return {
                 "我们的节奏……"
             },
             lq_2 = {
-                "我们的牌",
+                "我们打牌",
                 "打得相当潦草！"
             },
             lq_3 = {
                 "我们是时候",
-                "撤退重来了！"
+                "洗牌重来了！"
             },
             lq_4 = {
                 "老话怎么讲，",
@@ -4141,8 +4141,8 @@ return {
                 "捂上双眼！"
             },
             lq_9 = {
-                "我真是个傻瓜，",
-                "你的借口又是什么？"
+                "我可是真小丑，",
+                "你呢？说说看？"
             },
             lq_10 = {
                 "这可太惨了！"
@@ -4150,7 +4150,7 @@ return {
             dq_1 = {
                 "嗨呀！我盼着你",
                 "再来露两手，",
-                "才能应对这场",
+                "来应对这场",
                 "最终挑战！"
             }
         },
