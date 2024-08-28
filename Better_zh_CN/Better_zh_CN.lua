@@ -3,6 +3,7 @@
 --- MOD_ID: Better_zh_CN
 --- MOD_AUTHOR: [Dilant]
 --- MOD_DESCRIPTION: Better Simplified Chinese localization of Balatro
+--- PREFIX: bzh
 
 ----------------------------------------------
 -------------------MOD CODE-------------------
