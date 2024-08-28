@@ -11,9 +11,9 @@
 
 ## 安装
 
-### Steamodded
+### Steamodded 1.0
 
-如果你已经安装 [Steamodded](https://github.com/Steamopollys/Steamodded)，将 `Better_zh_CN` 整个文件夹放置在 `Mod` 文件夹下即可。
+如果你已经安装 [Steamodded 1.0](https://github.com/Steamopollys/Steamodded) 及以上版本，将 `Better_zh_CN` 整个文件夹放置在 `Mod` 文件夹下即可。
 
 ### 其他方式
 
