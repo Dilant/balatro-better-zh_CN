@@ -3314,23 +3314,28 @@ return {
         collabs = {
             Clubs = {
                 ["1"] = "默认",
-                ["2"] = "Vampire Survivors",
+                ["2"] = "吸血鬼幸存者",
+                ["3"] = "杀戮尖塔",
             },
             Diamonds = {
                 ["1"] = "默认",
-                ["2"] = "DAVE THE DIVER",
+                ["2"] = "潜水员戴夫",
+                ["3"] = "星露谷物语",
             },
             Hearts = {
                 ["1"] = "默认",
                 ["2"] = "Among Us",
+                ["3"] = "以撒的结合",
             },
             Spades = {
                 ["1"] = "默认",
                 ["2"] = "The Witcher",
+                ["3"] = "赛博朋克 2077",
             },
         },
         dictionary = {
             ["$"] = "$",
+            b_FAQ = "常见问题",
             b_and_use = "并使用",
             b_back = "返回",
             b_blinds = "盲注",
@@ -3356,6 +3361,7 @@ return {
             b_enhanced_cards = "增强牌",
             b_full_deck = "完整牌组",
             b_high_contrast_cards = "高对比度卡牌",
+            b_how_to_play = "如何游玩",
             b_imagery = "图像",
             b_jokers = "小丑",
             b_load_profile = "加载存档",
@@ -3381,6 +3387,7 @@ return {
             b_reroll_boss = "重掷Boss盲注",
             b_reset_profile = "重置存档",
             b_restrictions = "限制条件",
+            b_retry = "重试",
             b_rules = "规则",
             b_run_info_1 = "比赛",
             b_run_info_2 = "信息",
@@ -3405,6 +3412,7 @@ return {
             b_set_rumble = "控制器振动",
             b_set_screenshake = "屏幕振动",
             b_set_shadows = "阴影",
+            b_set_vibration = "振动",
             b_set_video = "视频",
             b_set_windowmode = "窗口模式",
             b_settings = "设置",
@@ -3557,9 +3565,20 @@ return {
                 "关闭",
                 "开启",
             },
+            ml_buy_and_use_target = {
+                "购买",
+                "并使用",
+            },
+            ml_buy_target = {
+                "购买",
+            },
             ml_card_stats = {
                 "卡牌",
                 "统计数据",
+            },
+            ml_controller_required = {
+                "游玩本游戏需要手柄，",
+                "请连接手柄后继续。",
             },
             ml_crash_report_info = {
                 "崩溃报告将发送给开发人员，",
@@ -3589,6 +3608,13 @@ return {
                 "打出并完成计分后",
                 "返回手牌",
             },
+            ml_offline_message = {
+                "此设备已离线，",
+                "当前存档未能同步到最新。",
+            },
+            ml_open_target = {
+                "打开",
+            },
             ml_paste_seed = {
                 "粘贴",
                 "种子",
@@ -3596,6 +3622,12 @@ return {
             ml_play_discard_pos_opt = {
                 "弃牌/出牌",
                 "出牌/弃牌",
+            },
+            ml_redeem_target = {
+                "兑换",
+            },
+            ml_sell_target = {
+                "售出",
             },
             ml_shadow_opt = {
                 "开启",
@@ -3913,9 +3945,19 @@ return {
             fh_4 = {
                 "每张游戏牌也会",
                 "提供一些{C:chips}筹码{}，",
-                "光标悬停在牌上就能查看！",
+                "光标悬停在卡牌上就能查看！",
+            },
+            fh_4_touch = {
+                "每张游戏牌也会",
+                "提供一些{C:chips}筹码{}，",
+                "按住卡牌就能查看！",
             },
             fh_5 = {
+                "现在选择",
+                "{C:attention}最多5张{}牌，",
+                "然后按下{C:blue}出牌{}按钮。",
+            },
+            fh_5_touch = {
                 "现在选择",
                 "{C:attention}最多5张{}牌，",
                 "然后按下{C:blue}出牌{}按钮。",
@@ -3958,6 +4000,13 @@ return {
             },
             s_2 = {
                 "试试买下这张",
+                "超酷的小丑牌！",
+            },
+
+            s_2_touch = {
+                "试试把它拖动到",
+                "{C:attention}购买{}区域，",
+                "买下这张",
                 "超酷的小丑牌！",
             },
             s_3 = {
@@ -4026,6 +4075,12 @@ return {
             sh_3 = {
                 "选择指定数量的手牌，",
                 "然后按下{C:attention}使用{}按钮，",
+                "就可以使用{C:tarot}塔罗牌",
+                "施加各种增强效果！",
+            },
+            sh_3_touch = {
+                "选择指定数量的手牌，",
+                "然后拖动塔罗牌到{C:attention}使用{}区域，",
                 "就可以使用{C:tarot}塔罗牌",
                 "施加各种增强效果！",
             },
